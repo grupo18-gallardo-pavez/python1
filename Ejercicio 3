@@ -1,0 +1,11 @@
+valor_b=int(input("Ingrese el valor de la variable b: "))
+a=valor_b
+print("La exprecion a=b tiene como valor a:",a," y b:", valor_b)
+resultado_1=a+valor_b
+print("El resultado de a+b es:",resultado_1)
+resultado_2=a+a
+print("El resultado de a+a es:",resultado_2)
+resultado_3=a*2+valor_b*3
+print("El resultado de a*2+b*3 es:",resultado_3)
+resultado_4=2*(a+valor_b)
+print("El resultado de 2*(a+b) es:",resultado_4)
