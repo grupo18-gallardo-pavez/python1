@@ -1,0 +1,47 @@
+import math as m
+class figura:
+    def __init__(self, color,autor):
+        self.color=color
+        self.autor=autor
+    def __str__(self):
+        return "Color: " + self.color + ", Autor: " + self.autor 
+    def get_color(self):
+        return self.color
+    def set_autor(self,new_autor):
+        self.autor = new_autor
+          
+class circulo(figura): #hereda de la clase figura
+    def __init__(self,color, autor, radio):
+        super().__init__(color, autor) # accede al atributo de la clase figura (color)
+        self.radio=radio
+    def __str__(self):
+        return super().__str__() + ", Radio: " + str(self.radio)
+    def area(self):
+        """Se entrega el area"""
+        return self.radio**2*m.pi 
+    def perimetro(self):
+        """Se entrega el perimetro"""
+        return self.radio*2*m.pi 
+    def get_color(self):
+        return super().get_color()
+    def set_autor(self,new_autor):
+        super().set_autor(new_autor)
+
+
+class triangulo(figura): #hereda de la clase figura
+    def __init__(self,color, autor, base, altura):
+        super().__init__(color, autor) # accede al atributo de la clase figura (color)
+        self.base=base
+        self.altura=altura
+    def __str__(self):
+        return super().__str__() + ", Base: " + str(self.base) + ",Altura:" + str(self.altura) 
+    def area(self):
+        """Se entrega el area"""
+        return self.base*self.altura*0.5
+    def color(self):
+        """Se entrega el color"""
+        return self.color 
+    def get_color(self):
+        return super().get_color()
+    def set_autor(self,new_autor):
+        super().set_autor(new_autor)
