@@ -1,0 +1,8 @@
+edad_1=input("Ingrese la edad de la primera persona: ")
+edad_2=input("Ingrese la edad de la segunda persona: ")
+if edad_1>edad_2:
+    print("La primera persona es mayor con una edad de",edad_1, "años")
+elif edad_1<edad_2:
+    print("La segunda persona es mayor con una edad de",edad_2,"años")
+else:
+    print("Ambas personas tienen la misma edad con",edad_1, "años")
