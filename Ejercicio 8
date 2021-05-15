@@ -1,0 +1,24 @@
+varA=3
+varB=8
+def comparador(intA,intB):
+    if intA > intB:
+        print("varA es mayor que la varB")
+    elif intA < intB:
+        print("varA es menor que varB")
+    elif intA == intB:
+        print("Ambas variables son iguales")   
+#varA=input("Ingrese un string o un numero en la variable A: ")
+#varB=input("Ingrese un string o un numero en la variable B: ")
+intA=isinstance(varA, int)
+intB=isinstance(varB, int)
+strA=isinstance(varA, str)
+strB=isinstance(varB, str)
+
+if intA == True and intB == True:
+    comparador(varA,varB)
+if strA == True and strB == True:
+    print("varA y varB son string")
+if intA == True and strB == True:
+    print("varA y varB son distintas variables")
+if strA == True and intB == True:
+    print("varA y varB son distintas variables")
