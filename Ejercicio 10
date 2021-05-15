@@ -1,0 +1,18 @@
+import msvcrt
+n=1
+
+while (n<=7):
+    numero=2*n
+    print(numero)
+    n+=1
+    if n > 7:
+        print("Adios!")    
+input("Aprete un boton para continuar...")
+for i in reversed(range(1,6)):
+    if i == 5:
+        print("hello")
+        resultado=2*i
+        print(resultado)
+    elif i<5:
+        resultado=2*i
+        print(resultado)
