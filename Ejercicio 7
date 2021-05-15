@@ -1,0 +1,17 @@
+import os
+from decimal import *
+k=0
+r=0
+getcontext().prec=1500
+potencias=Decimal(1)
+anterior=0
+while True:
+    #r+= 4*pow(-1,k)/Decimal(2*k+1)
+    r+=Decimal(4/(8*k+1)-2/(8*k+4)-1/(8*k+5)-1/(8*k+6)) / Decimal(potencias)
+    k +=1
+    potencias*=16
+    os.system("cls")
+    print(r)
+
+    if anterior == r: break
+    anterior = r
